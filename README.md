@@ -76,9 +76,9 @@ IT 개발업계 10년차(2012년~) 개발자입니다.
 
 | 분류 | 사용 기술 | 기술 수준 요약 |
 |---|:---:|:---:|
-| Language | Java <br/> Python | `Java`: `GC`, `Memory`의 이해 및 `Optional`, `Stream`의 활용 <br/> `Python`: `Scope`, `Instance Method`, `Class Method`의 이해  |
-| Framework | Springboot | `Springboot`: `IoC`, `Bean`, `AOP`, `ORM`, `Slice Test`의 활용 |
-| Architecture | MSA <br/> Design Pattern | `MSA`: `Kubernetes`기반 서비스 개발 <br/> `Design Pattern`: `Singleton`|
+| Language | Java <br/> Python | `Java`: `GC`, `Memory`의 이해 및 `Optional`, `Stream`의 활용 <br/> `Python`: `Scope`, `비동기 처리`, `멀티 프로세스`  |
+| Framework | Springboot | `Springboot`: `IoC`, `Bean Lifecycle`, `AOP`, `ORM`, `Slice Test`의 활용 |
+| Architecture | MSA | `MSA`: `Cloud Native Computing Foundation`, `MSA Pattern`, `Event Driven Architecture`, `Domain Driven Design`에 대한 이해 |
 | Cloud Infra | Kubernetes <br/> Docker <br/> S3 <br/> Cloud front <br/> Cloud watch | `Kubernetes`: Cluster 생성 및 서비스 배포, `IoT`에서도 활용 <br/> `Docker`: 이미지 생성 및 컨테이너 관리 <br/> `S3`: 파일 저장소로 활용 <br/> `Cloud front`: S3의 캐싱용도로 활용 경험 <br/> `Cloud watch`: S3의 모니터링용도로 활용 경험 |
 | Middleware | Kafka <br/> Mosquitto | `Kafka`: 서비스간 데이터 전달을 위해 활용 경험 <br/> `Mosquitto`: `IoT`용 데이터 전달 매체로 활용 경험 |
 | Database | Redis <br/> PostgreSQL <br/> MongoDB <br/> MariaDB <br/> Oracle <br/> ElasticSearch | `Redis`: 지원하는 지료구조의 이해 <br/> `PostgreSQL`: `PGPool`을 활용한 `HA` 구성, 테이블 및 데이터의 `CRUD` 가능 <br/> `MongoDB`: 테이블 및 데이터의 `CRUD` 가능 <br/> `MariaDB`: 테이블 및 데이터의 `CRUD` 가능 <br/> `Oracle`: 테이블 및 데이터의 `CRUD` 가능 <br/> `ElasticSearch`: 데이터 인덱싱 및 `kibana`를 활용한 조회 경험 |
