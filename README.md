@@ -79,10 +79,10 @@ IT 개발업계 10년차(2012년~) 개발자입니다.
 | Language | Java <br/> Python | `Java`: `GC`, `Memory`의 이해 및 `Optional`, `Stream`의 활용 <br/> `Python`: `Scope`, `비동기 처리`, `멀티 프로세스`  |
 | Framework | Springboot | `Springboot`: `IoC`, `Bean Lifecycle`, `AOP`, `ORM`, `Slice Test`의 활용 |
 | Architecture | MSA | `MSA`: `Cloud Native Computing Foundation`, `MSA Pattern`, `Event Driven Architecture`, `Domain Driven Design`에 대한 이해 |
-| Cloud Infra | Kubernetes <br/> Docker <br/> S3 <br/> Cloud front <br/> Cloud watch | `Kubernetes`: Cluster 생성 및 서비스 배포, `IoT`에서도 활용 <br/> `Docker`: 이미지 생성 및 컨테이너 관리 <br/> `S3`: 파일 저장소로 활용 <br/> `Cloud front`: S3의 캐싱용도로 활용 경험 <br/> `Cloud watch`: S3의 모니터링용도로 활용 경험 |
+| IaaS | AWS | `S3`, `Cloud Front`, `Cloud Watch` 활용 경험
+| Cloud Native Foundation | Kubernetes <br/> Docker <br/> Nexus | `Kubernetes`: Cluster 생성 및 서비스 배포, `IoT`에서도 활용 <br/> `Docker`: 이미지 생성 및 컨테이너 관리 </br> `Nexus`: `container 이미지 저장소`로 활용 |
 | Middleware | Kafka <br/> Mosquitto | `Kafka`: 서비스간 데이터 전달을 위해 활용 경험 <br/> `Mosquitto`: `IoT`용 데이터 전달 매체로 활용 경험 |
 | Database | Redis <br/> PostgreSQL <br/> MongoDB <br/> MariaDB <br/> Oracle <br/> ElasticSearch | `Redis`: 지원하는 지료구조의 이해 <br/> `PostgreSQL`: `PGPool`을 활용한 `HA` 구성, 테이블 및 데이터의 `CRUD` 가능 <br/> `MongoDB`: 테이블 및 데이터의 `CRUD` 가능 <br/> `MariaDB`: 테이블 및 데이터의 `CRUD` 가능 <br/> `Oracle`: 테이블 및 데이터의 `CRUD` 가능 <br/> `ElasticSearch`: 데이터 인덱싱 및 `kibana`를 활용한 조회 경험 |
-| Repository | Nexus | `Nexus`: `docker 이미지` 저장소로 활용 경험 |
 | Monitoring | Prometheus <br/> Grafana <br/> Zabbix | `Prometheus`: 로그 수집기로 활용 경험 <br/> `Grafana`: 모니터링 시각화 대시보드 구성 <br/> `Zabbix`: 로그를 수집하여 모니터링 대시보드 구성 |
 | Team culture | DevOps <br/> Agile-Scrum <br/> Jira <br/> Trello <br/> Redmine | `DevOps`: `Gitlab`이나 `Jenkins`를 활용하여 `CI/CD` 구성 경험 <br/> `Agile-Scrum`: `Scrum`스러운 개발문화 경험 <br/> `Jira`: `Task`기반 일정관리 경험 <br/> `Trello`: `Task`기반 일정관리 경험 <br/> `Redmine`: 일정관리 및 이슈트래킹 관리 경험 |
 | Version control system | Git | `Git`: 기본 개념 및 `Branch`, `Rebase`, `MR` 등을 활용한 협업 가능  |
