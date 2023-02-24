@@ -5,7 +5,7 @@
 
 가치있는 서비스를 좋은 사람들과 키워나갈 수 있는 곳을 찾고 있습니다.
 
-[링크드인](www.linkedin.com/in/hosung-hwang-916046184) 및 [개인블로그](https://yeti.tistory.com/), [Github](https://github.com/amansman77)를 활용하여 개발적 지식을 공유하고자 노력하고 있습니다.
+[링크드인](https://www.linkedin.com/in/hosung-hwang-916046184) 및 [개인블로그](https://yeti.tistory.com/), [Github](https://github.com/amansman77)를 활용하여 개발적 지식을 공유하고자 노력하고 있습니다.
 
 ## 지향점
 
