@@ -1,13 +1,13 @@
 ---
 layout: home
 title: "황호성 - 백엔드 개발자 & Tech Lead"
-description: "13년차 백엔드 개발자 황호성입니다. Spring Boot, MSA, DevOps, AI 전문가로 안정적이고 확장 가능한 백엔드 시스템을 구축합니다."
+description: "만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발자 황호성입니다. Spring Boot, MSA, DevOps, AI 전문가로 안정적이고 확장 가능한 백엔드 시스템을 구축합니다."
 ---
 
 <div class="hero-section">
   <div class="hero-content">
     <h1 class="hero-title">안정적이고 확장 가능한 백엔드 시스템을 구축하세요</h1>
-    <p class="hero-subtitle">13년차 백엔드 개발자 황호성과 함께 귀사의 비즈니스 성장을 위한 최적의 솔루션을 만들어보세요.</p>
+    <p class="hero-subtitle">만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발자 황호성과 함께 귀사의 비즈니스 성장을 위한 최적의 솔루션을 만들어보세요.</p>
     <div class="hero-cta">
       <a href="/contact/" class="btn btn-primary btn-large">프로젝트 의뢰하기</a>
       <a href="/services/" class="btn btn-secondary btn-large">서비스 보기</a>
@@ -21,7 +21,7 @@ description: "13년차 백엔드 개발자 황호성입니다. Spring Boot, MSA,
     <div class="value-grid">
       <div class="value-item">
         <div class="value-icon">🚀</div>
-        <h3>13년의 실전 경험</h3>
+        <h3>{{ 'now' | date: '%Y' | minus: 2012 }}년의 실전 경험</h3>
         <p>기획부터 운영까지 전 주기 개발 경험을 보유한 개발자로, 실시간 대규모 트래픽 대응과 MSA 전환 등 실전 중심의 기술 적용에 강점이 있습니다.</p>
       </div>
       <div class="value-item">

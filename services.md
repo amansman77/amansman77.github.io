@@ -2,20 +2,20 @@
 layout: page
 title: 서비스
 permalink: /services/
-description: "13년차 백엔드 개발자 황호성이 제공하는 전문 서비스"
+description: "만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발자 황호성이 제공하는 전문 서비스"
 ---
 
 <div class="services-hero">
   <div class="container">
     <h1>전문 서비스</h1>
-    <p>13년차 백엔드 개발 및 Tech Lead 경험으로 귀사의 비즈니스 성장을 위한 최적의 솔루션을 제공합니다.</p>
+    <p>만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발 및 Tech Lead 경험으로 귀사의 비즈니스 성장을 위한 최적의 솔루션을 제공합니다.</p>
   </div>
 </div>
 
 <div class="services-content">
   <div class="container">
     <div class="intro-section">
-      <p>저는 <strong>13년 2개월</strong>의 백엔드 개발 및 Tech Lead 경험을 바탕으로 다음과 같은 서비스를 제공합니다. 기획부터 운영까지 전 주기 개발 경험을 보유하고 있으며, 실시간 대규모 트래픽 대응과 MSA 전환, AI 도입 등 실전 중심의 기술 적용에 강점이 있습니다.</p>
+      <p>저는 <strong>{{ 'now' | date: '%Y' | minus: 2012 }}년 {{ 'now' | date: '%m' | minus: 2 }}개월</strong>의 백엔드 개발 및 Tech Lead 경험을 바탕으로 다음과 같은 서비스를 제공합니다. 기획부터 운영까지 전 주기 개발 경험을 보유하고 있으며, 실시간 대규모 트래픽 대응과 MSA 전환, AI 도입 등 실전 중심의 기술 적용에 강점이 있습니다.</p>
     </div>
 
     <div class="services-grid">

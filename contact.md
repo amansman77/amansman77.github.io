@@ -15,7 +15,7 @@ description: "프로젝트 문의 및 연락처"
 <div class="contact-content">
   <div class="container">
     <div class="intro-section">
-      <p>13년차 백엔드 개발자로서 귀사의 프로젝트를 성공으로 이끌어드리겠습니다. 프로젝트에 대한 자세한 상담이나 견적 문의를 원하시면 언제든 연락주세요.</p>
+      <p>만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발자로서 귀사의 프로젝트를 성공으로 이끌어드리겠습니다. 프로젝트에 대한 자세한 상담이나 견적 문의를 원하시면 언제든 연락주세요.</p>
     </div>
 
     <div class="contact-form-section">

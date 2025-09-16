@@ -8,14 +8,14 @@ description: "주요 프로젝트 및 케이스 스터디"
 <div class="work-hero">
   <div class="container">
     <h1>프로젝트 포트폴리오</h1>
-    <p>13년간 다양한 프로젝트를 통해 쌓은 경험과 성과를 소개합니다.</p>
+    <p>{{ 'now' | date: '%Y' | minus: 2012 }}년간 다양한 프로젝트를 통해 쌓은 경험과 성과를 소개합니다.</p>
   </div>
 </div>
 
 <div class="work-content">
   <div class="container">
     <div class="intro-section">
-      <p>13년간 다양한 프로젝트를 통해 쌓은 경험과 성과를 소개합니다. 대규모 서비스 운영부터 AI 플랫폼 개발, 기술 스택 전환까지 다양한 도전을 통해 성장해왔습니다.</p>
+      <p>{{ 'now' | date: '%Y' | minus: 2012 }}년간 다양한 프로젝트를 통해 쌓은 경험과 성과를 소개합니다. 대규모 서비스 운영부터 AI 플랫폼 개발, 기술 스택 전환까지 다양한 도전을 통해 성장해왔습니다.</p>
     </div>
 
     <div class="projects-section">

@@ -1,7 +1,7 @@
 # Site settings
 title: "황호성 - 백엔드 개발자 & Tech Lead"
 email: "amansman77@gmail.com"
-description: "13년차 백엔드 개발자 황호성입니다. Spring Boot, MSA, DevOps, AI 전문가로 안정적이고 확장 가능한 백엔드 시스템을 구축합니다."
+description: "만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발자 황호성입니다. Spring Boot, MSA, DevOps, AI 전문가로 안정적이고 확장 가능한 백엔드 시스템을 구축합니다."
 baseurl: ""
 url: "https://amansman77.github.io"
 twitter_username: ""
@@ -54,7 +54,7 @@ social:
 seo:
   type: "Person"
   name: "황호성"
-  description: "13년차 백엔드 개발자 황호성입니다. Spring Boot, MSA, DevOps, AI 전문가로 안정적이고 확장 가능한 백엔드 시스템을 구축합니다."
+  description: "만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발자 황호성입니다. Spring Boot, MSA, DevOps, AI 전문가로 안정적이고 확장 가능한 백엔드 시스템을 구축합니다."
   image: "/assets/images/og-image.png"
   url: "https://amansman77.github.io"
   twitter:

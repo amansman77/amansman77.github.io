@@ -2,20 +2,20 @@
 layout: page
 title: "소개"
 permalink: /about/
-description: "13년차 백엔드 개발자 황호성의 소개 및 경력"
+description: "만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발자 황호성의 소개 및 경력"
 ---
 
 <div class="about-hero">
   <div class="container">
     <h1>안녕하세요, 황호성입니다</h1>
-    <p>13년차 백엔드 개발자이자 Tech Lead로서, 기획부터 운영까지 전 주기 개발 경험을 보유하고 있습니다.</p>
+    <p>만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발자이자 Tech Lead로서, 기획부터 운영까지 전 주기 개발 경험을 보유하고 있습니다.</p>
   </div>
 </div>
 
 <div class="about-content">
   <div class="container">
     <div class="intro-section">
-      <p><strong>13년 2개월</strong>의 개발 경험을 보유한 백엔드 개발자이자 <strong>Tech Lead</strong>로서, 기획부터 운영까지 전 주기 개발 경험을 보유하고 있습니다.</p>
+      <p><strong>{{ 'now' | date: '%Y' | minus: 2012 }}년 {{ 'now' | date: '%m' | minus: 2 }}개월</strong>의 개발 경험을 보유한 백엔드 개발자이자 <strong>Tech Lead</strong>로서, 기획부터 운영까지 전 주기 개발 경험을 보유하고 있습니다.</p>
       <p>실시간 대규모 트래픽 대응과 MSA 전환, GPT 기반 AI 도입 등 실전 중심의 기술 적용에 강점이 있으며, TDD·DDD 기반 리팩토링과 코드리뷰 문화 확산 등 개발 조직의 성장에도 기여해왔습니다.</p>
     </div>
 
