@@ -1,3 +1,60 @@
-# theme: jekyll-theme-cayman
-# remote_theme:  murraco/jekyll-theme-minimal-resume 
-# user_title: 제목
+# Site settings
+title: "황호성 - 백엔드 개발자 & Tech Lead"
+email: "hosung.hwang.dev@gmail.com"
+description: "11년차 백엔드 개발자 황호성입니다. Spring Boot, MSA, DevOps 전문가로 안정적이고 확장 가능한 백엔드 시스템을 구축합니다."
+baseurl: ""
+url: "https://amansman77.github.io"
+twitter_username: ""
+github_username: "amansman77"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - index.md
+  - services.md
+  - work.md
+  - about.md
+  - contact.md
+
+# Collections
+collections:
+  works:
+    output: true
+    permalink: /work/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "works"
+    values:
+      layout: "work"
+
+# SEO
+author: "황호성"
+social:
+  name: "황호성"
+  links:
+    - "https://github.com/amansman77"
+    - "https://www.linkedin.com/in/hosung-hwang-916046184"
+    - "https://yeti.tistory.com/"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Mobile
+  - docs/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock

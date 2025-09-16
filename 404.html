@@ -1,0 +1,30 @@
+---
+layout: default
+title: "페이지를 찾을 수 없습니다"
+permalink: /404.html
+---
+
+<div class="page-content">
+  <div class="wrapper">
+    <div class="post">
+      <header class="post-header">
+        <h1 class="post-title">404 - 페이지를 찾을 수 없습니다</h1>
+      </header>
+      
+      <div class="post-content">
+        <p>죄송합니다. 요청하신 페이지를 찾을 수 없습니다.</p>
+        
+        <p>다음 중 하나를 시도해보세요:</p>
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">홈페이지로 돌아가기</a></li>
+          <li><a href="{{ '/services/' | relative_url }}">서비스 페이지</a></li>
+          <li><a href="{{ '/work/' | relative_url }}">프로젝트 페이지</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">소개 페이지</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}">연락처 페이지</a></li>
+        </ul>
+        
+        <p>문제가 지속되면 <a href="mailto:{{ site.email }}">이메일</a>로 연락주세요.</p>
+      </div>
+    </div>
+  </div>
+</div>
