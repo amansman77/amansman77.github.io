@@ -408,6 +408,25 @@ description: "만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발�
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box;
+  }
+  
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 20px !important;
+    margin: 0 auto !important;
+  }
+  
   .hero-title {
     font-size: 2rem;
   }
@@ -423,6 +442,13 @@ description: "만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발�
   
   .value-grid, .services-grid, .work-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 20px !important;
+    margin: 0 auto !important;
   }
 }
 </style>

@@ -713,8 +713,27 @@ description: "만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발�
 }
 
 @media (max-width: 768px) {
+  .about-hero {
+    padding: 60px 0;
+  }
+  
   .about-hero h1 {
     font-size: 2rem;
+  }
+  
+  .about-content {
+    padding: 60px 0;
+  }
+  
+  .container {
+    padding: 0 20px !important;
+  }
+  
+  .post-title,
+  .post-header,
+  .post-content {
+    padding-left: 0;
+    padding-right: 0;
   }
   
   .competencies-grid,
