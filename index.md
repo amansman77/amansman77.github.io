@@ -4,7 +4,6 @@ title: "황호성 · 비즈니스를 함께 만드는 개발자"
 description: "기획·개발·실험·운영까지 비즈니스 전체 흐름을 설계하는 개발자입니다. 대표 서비스인 단단이(Dandani)를 통해 감정 회복 챌린지를 실제 유저 트래픽과 실험으로 검증해 왔습니다."
 ---
 
-<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
