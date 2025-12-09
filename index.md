@@ -1,454 +1,732 @@
 ---
-layout: home
-title: "황호성 - 백엔드 개발자 & Tech Lead"
-description: "만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발자 황호성입니다. Spring Boot, MSA, DevOps, AI 전문가로 안정적이고 확장 가능한 백엔드 시스템을 구축합니다."
+layout: null
+title: "황호성 · 비즈니스를 함께 만드는 개발자"
+description: "기획·개발·실험·운영까지 비즈니스 전체 흐름을 설계하는 개발자입니다. 대표 서비스인 단단이(Dandani)를 통해 감정 회복 챌린지를 실제 유저 트래픽과 실험으로 검증해 왔습니다."
 ---
 
-<div class="hero-section">
-  <div class="hero-content">
-    <h1 class="hero-title">안정적이고 확장 가능한 백엔드 시스템을 구축하세요</h1>
-    <p class="hero-subtitle">만 {{ 'now' | date: '%Y' | minus: 2012 }}년차 백엔드 개발자 황호성과 함께 귀사의 비즈니스 성장을 위한 최적의 솔루션을 만들어보세요.</p>
-    <div class="hero-cta">
-      <a href="/contact/" class="btn btn-primary btn-large">프로젝트 의뢰하기</a>
-      <a href="/services/" class="btn btn-secondary btn-large">서비스 보기</a>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>황호성 · 비즈니스를 함께 만드는 개발자</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<div class="value-proposition">
-  <div class="container">
-    <h2>왜 황호성과 함께해야 할까요?</h2>
-    <div class="value-grid">
-      <div class="value-item">
-        <div class="value-icon">🚀</div>
-        <h3>{{ 'now' | date: '%Y' | minus: 2012 }}년의 실전 경험</h3>
-        <p>기획부터 운영까지 전 주기 개발 경험을 보유한 개발자로, 실시간 대규모 트래픽 대응과 MSA 전환 등 실전 중심의 기술 적용에 강점이 있습니다.</p>
-      </div>
-      <div class="value-item">
-        <div class="value-icon">⚡</div>
-        <h3>검증된 기술 스택</h3>
-        <p>Spring Boot, Java, Node.js, Python을 활용한 고성능 API 개발과 AWS, Kubernetes 기반의 확장 가능한 인프라 구축 경험을 보유하고 있습니다.</p>
-      </div>
-      <div class="value-item">
-        <div class="value-icon">🎯</div>
-        <h3>AI/ML 전문성</h3>
-        <p>Triton/Torch Inference Server 운영 경험과 GPT 기반 AI 도입 경험을 바탕으로 AI 모델 서빙 환경을 안정적으로 구축할 수 있습니다.</p>
-      </div>
-      <div class="value-item">
-        <div class="value-icon">👥</div>
-        <h3>팀 리딩 경험</h3>
-        <p>TDD·DDD 기반 리팩토링과 코드리뷰 문화 확산 등 개발 조직의 성장에도 기여해왔으며, 기술을 통한 사용자 경험 개선과 팀워크 중심의 협업을 중요 가치로 삼고 있습니다.</p>
-      </div>
-    </div>
-  </div>
-</div>
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
-<div class="services-preview">
-  <div class="container">
-    <h2>주요 서비스</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>백엔드 시스템 구축</h3>
-        <p>MSA 기반의 유연하고 확장 가능한 시스템 설계 및 Spring Boot/Java/Node.js를 활용한 고성능 API 개발</p>
-        <ul>
-          <li>시스템 아키텍처 설계</li>
-          <li>API 개발 및 최적화</li>
-          <li>데이터베이스 모델링</li>
-          <li>성능 튜닝</li>
-        </ul>
-      </div>
-      <div class="service-card">
-        <h3>AI/ML 서비스 개발</h3>
-        <p>AI 모델 서빙 아키텍처 설계 및 추론 API 개발, 데이터 전처리 파이프라인 구축</p>
-        <ul>
-          <li>AI 모델 서빙 환경 구축</li>
-          <li>추론 API 개발</li>
-          <li>데이터 파이프라인 구축</li>
-          <li>Document AI PoC</li>
-        </ul>
-      </div>
-      <div class="service-card">
-        <h3>DevOps & Tech Lead</h3>
-        <p>CI/CD 파이프라인 구축, 컨테이너 오케스트레이션, 모니터링 시스템 도입 및 개발팀 리딩</p>
-        <ul>
-          <li>CI/CD 파이프라인 구축</li>
-          <li>Kubernetes/Docker 환경</li>
-          <li>모니터링 시스템 설정</li>
-          <li>개발팀 멘토링</li>
-        </ul>
-      </div>
-    </div>
-    <div class="services-cta">
-      <a href="/services/" class="btn btn-outline">모든 서비스 보기</a>
-    </div>
-  </div>
-</div>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f8fafc',
+              100: '#eff3f7',
+              200: '#dde4ec',
+              300: '#c2cfdd',
+              400: '#9dacbf',
+              500: '#748399',
+              600: '#566478',
+              700: '#414c5b',
+              800: '#2b333b',
+              900: '#191f25',
+            },
+            accent: {
+              50: '#fff8ee',
+              100: '#ffe9cc',
+              200: '#ffd19a',
+              300: '#ffb165',
+              400: '#ff8c33',
+              500: '#f66b0e',
+              600: '#d44f04',
+              700: '#a53b06',
+              800: '#7a2f0b',
+              900: '#5e260b',
+            },
+          },
+        }
+      }
+    }
+  </script>
+</head>
 
-<div class="recent-work">
-  <div class="container">
-    <h2>최근 프로젝트</h2>
-    <div class="work-grid">
-      {% assign sorted_works = site.works | sort: "date" | reverse %}
-      {% for work in sorted_works limit:3 %}
-        <div class="work-item">
-          <h3><a href="{{ work.url }}">{{ work.title }}</a></h3>
-          <p class="work-date">{{ work.date | date: "%Y년 %m월" }}</p>
-          <p>{{ work.description | truncate: 150 }}</p>
-          <a href="{{ work.url }}" class="read-more">자세히 보기 →</a>
+<body class="bg-[#f5f5f5] text-brand-900 antialiased font-sans">
+<div class="min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-30 border-b border-gray-200 bg-white/80 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-5 md:px-6 py-4 flex items-center justify-between">
+      <!-- Logo / Name -->
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-xl bg-brand-900 text-white flex items-center justify-center text-xs font-semibold tracking-[0.16em]">
+          HH
         </div>
-      {% endfor %}
+        <div class="flex flex-col">
+          <span class="text-sm font-semibold tracking-tight">황호성</span>
+          <span class="text-[11px] text-gray-500 tracking-[0.16em] uppercase">
+            Product-minded Developer
+          </span>
+        </div>
+      </div>
+
+      <!-- Nav -->
+      <nav class="hidden md:flex items-center gap-7 text-[11px] font-medium tracking-[0.18em] uppercase text-gray-600">
+        <a href="#intro" class="hover:text-black transition">Intro</a>
+        <a href="#dandani" class="hover:text-black transition">Dandani</a>
+        <a href="#experiments" class="hover:text-black transition">Experiments</a>
+        <a href="#projects" class="hover:text-black transition">Projects</a>
+      </nav>
+
+      <!-- Right CTA -->
+      <div class="hidden md:flex items-center gap-3 text-[11px] tracking-[0.18em] uppercase">
+        <a
+          href="mailto:amansman77@gmail.com"
+          class="px-3 py-1.5 rounded-full border border-brand-900 text-brand-900 hover:bg-brand-900 hover:text-white transition text-[11px] font-medium"
+        >
+          Contact
+        </a>
+      </div>
+
+      <!-- Mobile menu (simple text) -->
+      <a
+        href="mailto:amansman77@gmail.com"
+        class="md:hidden text-[11px] tracking-[0.2em] uppercase border px-3 py-1.5 rounded-full"
+      >
+        Contact
+      </a>
     </div>
-    <div class="work-cta">
-      <a href="/work/" class="btn btn-outline">모든 프로젝트 보기</a>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-1">
+    <div class="max-w-6xl mx-auto px-5 md:px-6 pt-10 pb-16 space-y-14 md:space-y-16">
+
+      <!-- Intro / Hero -->
+      <section id="intro" class="grid gap-10 md:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] md:items-end">
+        <div class="space-y-5 max-w-3xl">
+          <p class="text-[11px] font-medium tracking-[0.22em] uppercase text-gray-500">
+            비즈니스를 함께 만드는 개발자
+          </p>
+          <h1 class="text-3xl md:text-[2.6rem] leading-tight font-semibold tracking-tight">
+            기획·개발·실험·운영까지<br class="hidden md:block" />
+            <span class="bg-accent-100 px-1.5 -mx-1.5 rounded-md">
+              비즈니스 전체 흐름을 설계하는 개발자
+            </span>
+            입니다.
+          </h1>
+          <p class="text-[15px] md:text-base text-gray-700 leading-relaxed">
+            저는 단순히 코드를 전달하는 사람이 아니라,<br class="hidden md:block" />
+            <span class="font-medium text-brand-800">
+              "문제 정의 → 실험 → 제품화 → 운영"의 전 과정을 스스로 설계하고 실행하는
+            </span>
+            사람입니다.
+            <br />
+            <span class="text-gray-600">
+              대표 서비스인 <strong>단단이(Dandani)</strong>를 통해,
+              감정 회복 챌린지를 실제 유저 트래픽과 실험으로 검증해 왔습니다.
+            </span>
+          </p>
+
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a
+              href="https://dandani.yetimates.com/"
+              target="_blank"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-900 text-white text-[12px] font-medium tracking-[0.16em] uppercase hover:bg-brand-800 transition"
+            >
+              단단이 바로 보기
+              <span class="text-xs">↗</span>
+            </a>
+            <a
+              href="#projects"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 bg-white text-[12px] font-medium tracking-[0.16em] uppercase hover:border-brand-900 hover:text-brand-900 transition"
+            >
+              다른 프로젝트 보기
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Side: Quick Facts -->
+        <div class="space-y-4 md:justify-self-end">
+          <div class="bg-white border border-gray-200 rounded-2xl p-4 md:p-5 shadow-sm">
+            <p class="text-[11px] font-medium tracking-[0.2em] uppercase text-gray-500 mb-3">
+              About
+            </p>
+            <div class="space-y-2 text-[13px] text-gray-700">
+              <p><span class="font-semibold text-brand-900">이름</span> · 황호성</p>
+              <p><span class="font-semibold text-brand-900">경력</span> · {{ 'now' | date: '%Y' | minus: 2012 | plus: 1 }}년차 풀스택/백엔드 개발자</p>
+              <p><span class="font-semibold text-brand-900">현재</span> · 하이파킹 MHP 책임연구원</p>
+              <p><span class="font-semibold text-brand-900">관심</span> · 감정 회복, 언어, 실험 기반 제품</p>
+            </div>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-2xl p-4 md:p-5 shadow-sm">
+            <p class="text-[11px] font-medium tracking-[0.2em] uppercase text-gray-500 mb-3">
+              Links
+            </p>
+            <div class="space-y-1.5 text-[13px]">
+              <a href="https://github.com/amansman77" target="_blank" class="block text-brand-800 hover:underline">
+                GitHub · amansman77
+              </a>
+              <a href="https://yeti.tistory.com" target="_blank" class="block text-brand-800 hover:underline">
+                Tech & 기록 블로그
+              </a>
+              <a href="https://www.linkedin.com/in/hosung-hwang-916046184/" target="_blank" class="block text-brand-800 hover:underline">
+                LinkedIn 프로필
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dandani: 대표 서비스 -->
+      <section id="dandani" class="space-y-6">
+        <div class="flex items-center justify-between gap-4">
+          <div>
+            <p class="text-[11px] font-medium tracking-[0.22em] uppercase text-accent-600 mb-1">
+              대표 서비스
+            </p>
+            <h2 class="text-xl md:text-2xl font-semibold tracking-tight">
+              단단이 (Dandani) · 감정 회복 기반 30일 챌린지 서비스
+            </h2>
+          </div>
+          <span class="hidden sm:inline-flex px-3 py-1 rounded-full bg-accent-50 text-[11px] text-accent-700 tracking-[0.16em] uppercase border border-accent-100">
+            Experiment-driven Product
+          </span>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-2xl p-5 md:p-6 shadow-sm grid gap-6 md:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]">
+          <!-- Left: Description -->
+          <div class="space-y-4 max-w-xl">
+            <p class="text-[15px] md:text-base text-gray-800 leading-relaxed">
+              <span class="font-semibold text-brand-900">단단이</span>는
+              <strong>"상황이 나를 흔들어도, 내가 중심을 잃지 않도록 돕는" 감정 회복 챌린지 서비스</strong>입니다.
+              사용자가 감정을 억누르지 않고 바라보며, 작은 실천을 반복할 수 있도록 설계했습니다.
+            </p>
+
+            <div class="grid gap-3 text-[13px] text-gray-700">
+              <div>
+                <p class="font-semibold text-brand-900 mb-1">제가 맡은 역할</p>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>서비스 기획 · 브랜드 톤 정의 · UX 플로우 설계</li>
+                  <li>Cloudflare Workers + D1 기반 서버리스 백엔드 개발</li>
+                  <li>React + MUI 기반 프론트엔드 및 인터랙션 구현</li>
+                  <li>실험 설계(가설·지표) 및 Instagram 광고를 통한 트래픽 유입 · 분석</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold text-brand-900 mb-1">핵심 기능</p>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>30일 감정 회복 챌린지 & 실천 기록 캘린더</li>
+                  <li>감정 상태(행복/슬픔/화남/불안/보통) 기반 AI 상담</li>
+                  <li>30일 후의 나에게 보내는 Timefold 편지(클라이언트 암호화)</li>
+                  <li>로그인 없이 사용하는 익명 사용자 구조 + 개인정보 최소 수집</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Snapshot & Stack -->
+          <div class="border border-dashed border-gray-200 rounded-xl p-4 space-y-4 bg-[#fafafa]">
+            <div>
+              <p class="text-[11px] font-medium tracking-[0.2em] uppercase text-gray-500 mb-1.5">
+                Tech Snapshot
+              </p>
+              <div class="flex flex-wrap gap-2 text-[11px]">
+                <span class="px-2.5 py-1 rounded-full bg-white border border-gray-200">Cloudflare Workers · D1</span>
+                <span class="px-2.5 py-1 rounded-full bg-white border border-gray-200">React · MUI</span>
+                <span class="px-2.5 py-1 rounded-full bg-white border border-gray-200">OpenAI API</span>
+                <span class="px-2.5 py-1 rounded-full bg-white border border-gray-200">Serverless / Edge</span>
+              </div>
+            </div>
+
+            <div class="border-t border-gray-200 pt-3">
+              <p class="text-[11px] font-medium tracking-[0.2em] uppercase text-gray-500 mb-1.5">
+                실험 기반 개선
+              </p>
+              <ul class="space-y-1.5 text-[13px] text-gray-700">
+                <li>· Retention v1/ v2 실험으로 Day1/Day7 잔존 구조 검증</li>
+                <li>· 실패 실험을 기반으로 v3에서 "보상·UX·리마인더" 루프 재설계</li>
+                <li>· PM 관점에서 가설 → 실험 → 지표 → 인사이트까지 전 주기 수행</li>
+              </ul>
+            </div>
+
+            <div class="pt-1">
+              <a
+                href="#experiments"
+                class="inline-flex items-center gap-1 text-[12px] text-brand-800 hover:underline"
+              >
+                단단이 실험 기록 보기
+                <span class="text-xs">↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experiments -->
+      <section id="experiments" class="space-y-5">
+        <div class="flex items-center justify-between gap-4">
+          <div>
+            <p class="text-[11px] font-medium tracking-[0.22em] uppercase text-gray-500 mb-1">
+              Experiments
+            </p>
+            <h2 class="text-xl md:text-2xl font-semibold tracking-tight">
+              실험으로 만드는 비즈니스 · Dandani Experiment v1–v3
+            </h2>
+          </div>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-3">
+          <!-- v1 -->
+          <article class="bg-white border border-gray-200 rounded-2xl p-4 md:p-5 shadow-sm flex flex-col">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-full bg-brand-900 text-white text-[11px] tracking-[0.18em] uppercase">
+                v1 · 완료
+              </span>
+              <span class="text-[11px] text-gray-500">2025.09 ~ 10</span>
+            </div>
+            <h3 class="text-sm font-semibold mb-2">
+              Daily Challenge 기반 리텐션 실험
+            </h3>
+            <p class="text-[13px] text-gray-700 leading-relaxed mb-3">
+              "작은 실천 → 기록 → 감정 변화" 루프가 자연스러운 재방문을 만들 수 있는지 검증한 첫 실험입니다.
+            </p>
+            <ul class="text-[12px] text-gray-700 space-y-1.5 flex-1">
+              <li>· DAU 최고 53 → 빠른 하락</li>
+              <li>· Day1 / Day7 / Day30 핵심 지표 모두 미달</li>
+              <li>· 결론: "루틴 서비스가 아니라 1일 체험 서비스"였음</li>
+            </ul>
+            <p class="mt-3 text-[12px] text-brand-800 font-medium">
+              ❯ 리텐션을 위해선 <strong>"루프와 보상 설계"</strong>가 필요하다는 인사이트 확보
+            </p>
+          </article>
+
+          <!-- v2 -->
+          <article class="bg-white border border-gray-200 rounded-2xl p-4 md:p-5 shadow-sm flex flex-col">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-full bg-accent-600 text-white text-[11px] tracking-[0.18em] uppercase">
+                v2 · 실패에서 배운 실험
+              </span>
+              <span class="text-[11px] text-gray-500">2025.11</span>
+            </div>
+            <h3 class="text-sm font-semibold mb-2">
+              7-Day Recovery Loop · 광고 퍼널 실험
+            </h3>
+            <p class="text-[13px] text-gray-700 leading-relaxed mb-3">
+              "공감하는 짧은 실천을 직접 선택하면 행동과 잔존으로 이어진다"는 가설을 검증한 실험입니다.
+            </p>
+            <ul class="text-[12px] text-gray-700 space-y-1.5 flex-1">
+              <li>· Instagram CTR 5.03% (광고 퍼포먼스 매우 우수)</li>
+              <li>· 하지만 챌린지 선택/실천/재방문 지표는 모두 목표 미달</li>
+              <li>· 실천 후 보상, 리마인더, 의미감이 부족했다는 원인 도출</li>
+            </ul>
+            <p class="mt-3 text-[12px] text-brand-800 font-medium">
+              ❯ "공감만으로는 행동이 일어나지 않는다"는 핵심 교훈 확보
+            </p>
+          </article>
+
+          <!-- v3 -->
+          <article class="bg-white border border-dashed border-accent-300 rounded-2xl p-4 md:p-5 flex flex-col bg-accent-50/40">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-full bg-white text-accent-700 border border-accent-300 text-[11px] tracking-[0.18em] uppercase">
+                v3 · 진행 예정
+              </span>
+              <span class="text-[11px] text-gray-500">2025.12 ~</span>
+            </div>
+            <h3 class="text-sm font-semibold mb-2">
+              UX & 감정적 보상 구조 검증 실험
+            </h3>
+            <p class="text-[13px] text-gray-700 leading-relaxed mb-3">
+              정제된 UI/UX와 감정적 보상 구조가 실천 완료율과 재방문율을 얼마나 끌어올릴 수 있는지 검증합니다.
+            </p>
+            <ul class="text-[12px] text-gray-700 space-y-1.5 flex-1">
+              <li>· Self-dogfooding으로 UX 개선 효과 정성 검증 완료</li>
+              <li>· 목표: Day2 Retention ≥ 10%, Day3 ≥ 8%</li>
+              <li>· 실험 실패 시 v4(리마인더·습관 루프)로 즉시 전환 계획 포함</li>
+            </ul>
+            <p class="mt-3 text-[12px] text-accent-700 font-medium">
+              ❯ "실험-기록-학습"을 반복하며 비즈니스 코어 루프를 찾아가는 과정입니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="space-y-6">
+        <div class="flex items-center justify-between gap-4">
+          <div>
+            <p class="text-[11px] font-medium tracking-[0.22em] uppercase text-gray-500 mb-1">
+              Related Projects
+            </p>
+            <h2 class="text-xl md:text-2xl font-semibold tracking-tight">
+              비즈니스를 함께 만들어갈 수 있는 프로젝트들
+            </h2>
+          </div>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 auto-rows-fr">
+          <!-- Mindful Motion -->
+          <article class="bg-white border border-gray-200 rounded-2xl p-5 md:p-6 shadow-sm flex flex-col">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <h3 class="text-sm font-semibold">
+                Mindful Motion · 프리미엄 요가 스튜디오 웹사이트
+              </h3>
+              <span class="text-[11px] px-2 py-1 rounded-full bg-brand-50 text-brand-700 border border-brand-100">
+                Branding · 예약
+              </span>
+            </div>
+            <!-- TAG PILLS -->
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Branding</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">예약</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Tailwind</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">UI/UX</span>
+            </div>
+            <p class="text-[13px] text-gray-700 leading-relaxed mb-3">
+              오프라인 요가 스튜디오의 브랜드 이미지를 온라인으로 옮기고, 예약/문의까지 한 번에 연결되는
+              브랜딩 웹사이트를 설계했습니다.
+            </p>
+            <ul class="text-[12px] text-gray-700 space-y-1 mb-3 flex-1">
+              <li>· Tailwind 기반 디자인 시스템 · 반응형 웹 구현</li>
+              <li>· 예약 폼 → Discord Webhook 연동으로 실시간 알림</li>
+              <li>· 향후 다른 오프라인 비즈니스에도 재사용 가능한 템플릿 구조</li>
+            </ul>
+            <a href="https://yoga-class.yetimates.com/" target="_blank" class="text-[12px] text-brand-800 hover:underline">
+              사이트 열기 ↗
+            </a>
+          </article>
+
+          <!-- Church site -->
+          <article class="bg-white border border-gray-200 rounded-2xl p-5 md:p-6 shadow-sm flex flex-col">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <h3 class="text-sm font-semibold">
+                Church Site · 교회 커뮤니티 웹사이트
+              </h3>
+              <span class="text-[11px] px-2 py-1 rounded-full bg-brand-50 text-brand-700 border border-brand-100">
+                커뮤니티 · 정보 구조
+              </span>
+            </div>
+            <!-- TAG PILLS -->
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">커뮤니티</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">정보 구조 설계</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Cloudflare Pages</span>
+            </div>
+            <p class="text-[13px] text-gray-700 leading-relaxed mb-3">
+              다양한 연령대가 사용하는 교회 웹사이트를, "정보 접근성을 최우선"으로 보는 관점에서 설계했습니다.
+            </p>
+            <ul class="text-[12px] text-gray-700 space-y-1 mb-3 flex-1">
+              <li>· 예배 시간, 설교 아카이브, 공지, 새가족 등록 플로우 설계</li>
+              <li>· 고연령층도 읽기 쉬운 타이포/레이아웃 적용</li>
+              <li>· Cloudflare Pages 기반 정적 배포 · 빠른 로딩 속도</li>
+            </ul>
+            <a href="https://church-site-sample.yetimates.com/" target="_blank" class="text-[12px] text-brand-800 hover:underline">
+              사이트 열기 ↗
+            </a>
+          </article>
+
+          <!-- JAYURO -->
+          <article class="bg-white border border-gray-200 rounded-2xl p-5 md:p-6 shadow-sm flex flex-col">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <h3 class="text-sm font-semibold">
+                JAYURO · 교육/강사 매칭 플랫폼(MVP)
+              </h3>
+              <span class="text-[11px] px-2 py-1 rounded-full bg-brand-50 text-brand-700 border border-brand-100">
+                Serverless · Matching
+              </span>
+            </div>
+            <!-- TAG PILLS -->
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Serverless</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Matching</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">BFF</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Flutter Web/App</span>
+            </div>
+            <p class="text-[13px] text-gray-700 leading-relaxed mb-3">
+              유학·입시·이민 아카데미를 연결하는 교육 매칭 플랫폼으로, MAU 100k를 목표로 한 엣지 기반 아키텍처를 설계했습니다.
+            </p>
+            <ul class="text-[12px] text-gray-700 space-y-1 mb-3 flex-1">
+              <li>· Cloudflare Workers + RDS MySQL + Hyperdrive 기반 BFF 설계</li>
+              <li>· Flutter Web/App + React Admin으로 멀티 클라이언트 대응</li>
+              <li>· ADR, ERD, API Spec 등 문서 중심의 협업 구조 구축</li>
+            </ul>
+            <div class="space-y-1 text-[12px]">
+              <a href="https://jayuro-app.pages.dev/" target="_blank" class="block text-brand-800 hover:underline">
+                사용자 Web 앱 ↗
+              </a>
+              <a href="https://jayuro-admin.pages.dev/" target="_blank" class="block text-brand-800 hover:underline">
+                Admin 대시보드 ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Shop Mate -->
+          <article class="bg-white border border-gray-200 rounded-2xl p-5 md:p-6 shadow-sm flex flex-col">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <h3 class="text-sm font-semibold">
+                Shop Mate · 영수증 관리 서버리스 웹앱
+              </h3>
+              <span class="text-[11px] px-2 py-1 rounded-full bg-brand-50 text-brand-700 border border-brand-100">
+                OCR · Data Pipeline
+              </span>
+            </div>
+            <!-- TAG PILLS -->
+            <div class="flex flex-wrap gap-1.5 mb-2">
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">OCR</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Data Pipeline</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Cloudflare Workers</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Edge</span>
+            </div>
+            <p class="text-[13px] text-gray-700 leading-relaxed mb-3">
+              영수증 이미지를 업로드하면, 클라이언트 OCR과 서버 파싱으로 구조화된 지출 데이터로 변환하는 웹앱입니다.
+            </p>
+            <ul class="text-[12px] text-gray-700 space-y-1 mb-3 flex-1">
+              <li>· Tesseract.js 기반 클라이언트 OCR + Cloudflare Workers API</li>
+              <li>· 이마트/트레이더스 등 다양한 영수증 포맷 파서 설계</li>
+              <li>· D1 + R2 기반 완전 서버리스 데이터 파이프라인 구축</li>
+            </ul>
+            <a href="https://shop.yetimates.com/" target="_blank" class="text-[12px] text-brand-800 hover:underline">
+              사이트 열기 ↗
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Engineering Systems -->
+      <section class="space-y-6 mt-16">
+        <div class="flex items-baseline justify-between gap-4">
+          <div>
+            <p class="text-[11px] font-medium tracking-[0.22em] uppercase text-gray-500 mb-1">
+              ENGINEERING SYSTEMS
+            </p>
+            <h2 class="text-xl md:text-2xl font-semibold tracking-tight">
+              현업에서 직접 설계·운영해 본 핵심 시스템들
+            </h2>
+          </div>
+          <p class="hidden md:block text-xs text-gray-500 max-w-xs leading-relaxed">
+            사이드 프로젝트 외에도, 실제 서비스 환경에서
+            <span class="font-semibold">대규모 트래픽과 인프라를 다뤄본 경험</span>을
+            짧게 정리했습니다. "어디까지 맡길 수 있는 사람인지"를
+            시스템 관점에서 보여주고자 했습니다.
+          </p>
+        </div>
+      
+        <div class="grid gap-6 md:grid-cols-2 auto-rows-fr">
+          <!-- Card 1: Cyworld Reboot Backend -->
+          <article class="bg-white border border-gray-200 rounded-2xl p-5 md:p-6 shadow-sm flex flex-col">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-sm font-semibold text-gray-900">
+                  Cyworld Reboot · 소셜 네트워크 백엔드
+                </h3>
+                <span
+                  class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-gray-600">
+                  FXGear · 2021–2023
+                </span>
+              </div>
+              <!-- TAG PILLS -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">High-Traffic</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Spring Boot</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">JPA</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Kafka</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">CI/CD</span>
+              </div>
+              <p class="text-xs text-gray-600 mb-3">
+                싸이월드 리부트 프로젝트의 백엔드 파트로 합류해,
+                회원·인증·결제·도토리·발송 등의 코어 도메인과 인프라를 설계·운영했습니다.
+              </p>
+      
+              <dl class="text-[11px] text-gray-700 space-y-1.5 mb-3">
+                <div class="flex gap-2">
+                  <dt class="w-16 text-gray-400">역할</dt>
+                  <dd>백엔드 개발자 → 파트 리더</dd>
+                </div>
+                <div class="flex gap-2">
+                  <dt class="w-16 text-gray-400">Stack</dt>
+                  <dd>Spring Boot · JPA · MySQL · Kafka · Jenkins</dd>
+                </div>
+                <div class="flex gap-2">
+                  <dt class="w-16 text-gray-400">규모</dt>
+                  <dd>회원 500만명, 푸시 200만건/6시간 처리</dd>
+                </div>
+              </dl>
+      
+              <ul class="text-[11px] text-gray-700 space-y-1.5">
+                <li>· 인증/회원/결제/도토리/발송 등 <span class="font-semibold">핵심 도메인 모듈 설계·구현</span></li>
+                <li>· CI/CD 파이프라인, APM 연동 등 <span class="font-semibold">운영 편의 인프라</span> 구축</li>
+                <li>· 파트 리더로서 일정·이슈 관리 및 코드리뷰/도메인 리뷰 문화 정착</li>
+              </ul>
+            </div>
+          </article>
+      
+          <!-- Card 2: AI Platform & DataLake -->
+          <article class="bg-white border border-gray-200 rounded-2xl p-5 md:p-6 shadow-sm flex flex-col">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-sm font-semibold text-gray-900">
+                  AI Platform Suite · DataLake · Edge · MLOps
+                </h3>
+                <span
+                  class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-gray-600">
+                  지어소프트 · 엔키스 · 2020–2021
+                </span>
+              </div>
+              <!-- TAG PILLS -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Kubernetes</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">DataLake</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Edge AI</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Kafka</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Triton</span>
+              </div>
+              <p class="text-xs text-gray-600 mb-3">
+                자율주행·이미지·센서 데이터를 수집·저장·학습·추론까지 연결하는
+                AI 플랫폼 전반을 설계·구현한 경험입니다.
+              </p>
+      
+              <dl class="text-[11px] text-gray-700 space-y-1.5 mb-3">
+                <div class="flex gap-2">
+                  <dt class="w-16 text-gray-400">역할</dt>
+                  <dd>플랫폼 엔지니어 · 설계/개발 리드</dd>
+                </div>
+                <div class="flex gap-2">
+                  <dt class="w-16 text-gray-400">Stack</dt>
+                  <dd>Kubernetes · Kafka · MongoDB · PostgreSQL · Triton</dd>
+                </div>
+                <div class="flex gap-2">
+                  <dt class="w-16 text-gray-400">범위</dt>
+                  <dd>DataLake · Edge AI · MLOps · 인프라 클러스터</dd>
+                </div>
+              </dl>
+      
+              <ul class="text-[11px] text-gray-700 space-y-1.5">
+                <li>· Spring Boot + Vue 기반 <span class="font-semibold">DataLake 관리 서비스</span> 개발</li>
+                <li>· K8s + Rook-Ceph + Kafka 기반 <span class="font-semibold">고가용 데이터 파이프라인</span> 구성</li>
+                <li>· Triton 기반 추론 환경과 Edge(K3s, Jetson) 운영 구조 설계</li>
+              </ul>
+            </div>
+          </article>
+      
+          <!-- Card 3: Realtime AI Factory Platform -->
+          <article class="bg-white border border-gray-200 rounded-2xl p-5 md:p-6 shadow-sm flex flex-col">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-sm font-semibold text-gray-900">
+                  Smart Factory · 실시간 AI 추론 플랫폼
+                </h3>
+                <span
+                  class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-gray-600">
+                  엠아이큐브솔루션 · 2019–2020
+                </span>
+              </div>
+              <!-- TAG PILLS -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Streaming</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">K8s</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Django</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">MongoDB</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">실시간 처리</span>
+              </div>
+              <p class="text-xs text-gray-600 mb-3">
+                공장 센서 데이터를 실시간으로 수집·분석하고,
+                이상 징후를 탐지하는 AI 추론 운영 환경을 PoC부터 구축했습니다.
+              </p>
+      
+              <dl class="text-[11px] text-gray-700 space-y-1.5 mb-3">
+                <div class="flex gap-2">
+                  <dt class="w-16 text-gray-400">역할</dt>
+                  <dd>플랫폼 설계 · 백엔드/데이터 파이프라인 개발</dd>
+                </div>
+                <div class="flex gap-2">
+                  <dt class="w-16 text-gray-400">Stack</dt>
+                  <dd>Kubernetes · Kafka · Spring Boot · Django · MongoDB</dd>
+                </div>
+                <div class="flex gap-2">
+                  <dt class="w-16 text-gray-400">기능</dt>
+                  <dd>센서 수집 · 모델추론 · 알람 · 관리자 웹</dd>
+                </div>
+              </dl>
+      
+              <ul class="text-[11px] text-gray-700 space-y-1.5">
+                <li>· AI 추론 파이프라인(수집→저장→모델→알람) <span class="font-semibold">엔드투엔드 설계</span></li>
+                <li>· Kubernetes + Kafka 기반 <span class="font-semibold">MSA 지향 구조</span> 도입</li>
+                <li>· 성능/부하 테스트를 통해 실시간 추론 처리 한계 검증</li>
+              </ul>
+            </div>
+          </article>
+      
+          <!-- Card 4: High-traffic Marketing & Push Platform -->
+          <article class="bg-white border border-gray-200 rounded-2xl p-5 md:p-6 shadow-sm flex flex-col">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-sm font-semibold text-gray-900">
+                  Marketing & Messaging · 고트래픽 플랫폼
+                </h3>
+                <span
+                  class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-gray-600">
+                  인라이플 · 2018–2019
+                </span>
+              </div>
+              <!-- TAG PILLS -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">L4/L7</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Redis</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">MariaDB</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">ELK</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[11px]">Zabbix</span>
+              </div>
+              <p class="text-xs text-gray-600 mb-3">
+                L4/L7, Redis, Chat, Push, MariaDB 기반으로
+                다수의 앱·웹을 동시에 지원하는 마케팅 플랫폼을 설계·운영했습니다.
+              </p>
+      
+              <dl class="text-[11px] text-gray-700 space-y-1.5 mb-3">
+                <div class="flex gap-2">
+                  <dt class="w-16 text-gray-400">역할</dt>
+                  <dd>서버 파트장 · 시스템 아키텍트</dd>
+                </div>
+                <div class="flex gap-2">
+                  <dt class="w-16 text-gray-400">Stack</dt>
+                  <dd>Spring Boot · Redis · MariaDB · ELK · Zabbix</dd>
+                </div>
+                <div class="flex gap-2">
+                  <dt class="w-16 text-gray-400">포커스</dt>
+                  <dd>Failover · Scale-out · 모니터링 · CI/CD</dd>
+                </div>
+              </dl>
+      
+              <ul class="text-[11px] text-gray-700 space-y-1.5">
+                <li>· L4/L7 + Redis + API 서버 구조로 <span class="font-semibold">고가용 아키텍처</span> 설계</li>
+                <li>· Zabbix + ELK로 서버·JVM·API 성능 모니터링 환경 도입</li>
+                <li>· Jenkins + Git-flow 도입으로 배포 자동화 및 팀 개발 프로세스 개선</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+      
     </div>
-  </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-200 bg-white">
+    <div class="max-w-6xl mx-auto px-5 md:px-6 py-6 text-[11px] text-gray-500 flex flex-col md:flex-row justify-between gap-2">
+      <span>© {{ 'now' | date: '%Y' }} Hosung Hwang. All rights reserved.</span>
+      <span>Designed & built with Tailwind CSS.</span>
+    </div>
+  </footer>
+
 </div>
-
-<div class="cta-section">
-  <div class="container">
-    <h2>프로젝트를 시작할 준비가 되셨나요?</h2>
-    <p>더 자세한 서비스 정보와 프로젝트 사례를 확인해보세요.</p>
-    <div class="cta-buttons">
-      <a href="/services/" class="btn btn-primary btn-large">서비스 보기</a>
-      <a href="/about/" class="btn btn-secondary btn-large">더 알아보기</a>
-    </div>
-  </div>
-</div>
-
-<style>
-.hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 80px 0;
-  text-align: center;
-}
-
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.hero-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-}
-
-.hero-subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-.hero-cta {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.value-proposition {
-  padding: 80px 0;
-  background: #f8f9fa;
-}
-
-.value-proposition h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
-  color: #333;
-}
-
-.value-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.value-item {
-  text-align: center;
-  padding: 2rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.value-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.value-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.value-item p {
-  color: #666;
-  line-height: 1.6;
-}
-
-.services-preview {
-  padding: 80px 0;
-}
-
-.services-preview h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
-  color: #333;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.service-card {
-  padding: 2rem;
-  border: 1px solid #e9ecef;
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.service-card h3 {
-  color: #333;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-.service-card p {
-  color: #666;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
-.service-card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.service-card li {
-  padding: 0.5rem 0;
-  color: #666;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.service-card li:before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: #28a745;
-  font-weight: bold;
-}
-
-.services-cta {
-  text-align: center;
-}
-
-.recent-work {
-  padding: 80px 0;
-  background: #f8f9fa;
-}
-
-.recent-work h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
-  color: #333;
-}
-
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.work-item {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.work-item h3 {
-  margin-bottom: 0.5rem;
-}
-
-.work-item h3 a {
-  color: #333;
-  text-decoration: none;
-}
-
-.work-item h3 a:hover {
-  color: #667eea;
-}
-
-.work-date {
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-
-.work-item p {
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.read-more {
-  color: #667eea;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.read-more:hover {
-  text-decoration: underline;
-}
-
-.work-cta {
-  text-align: center;
-}
-
-.cta-section {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  text-align: center;
-}
-
-.cta-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.cta-section p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-}
-
-.cta-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-.btn-primary {
-  background: #667eea;
-  color: white;
-  border-color: #667eea;
-}
-
-.btn-primary:hover {
-  background: #5a6fd8;
-  border-color: #5a6fd8;
-  transform: translateY(-2px);
-}
-
-.btn-secondary {
-  background: transparent;
-  color: white;
-  border-color: white;
-}
-
-.btn-secondary:hover {
-  background: white;
-  color: #667eea;
-  transform: translateY(-2px);
-}
-
-.btn-outline {
-  background: transparent;
-  color: #667eea;
-  border-color: #667eea;
-}
-
-.btn-outline:hover {
-  background: #667eea;
-  color: white;
-  transform: translateY(-2px);
-}
-
-.btn-large {
-  padding: 16px 32px;
-  font-size: 1.1rem;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 60px 0;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    box-sizing: border-box;
-  }
-  
-  .hero-content {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 20px !important;
-    margin: 0 auto !important;
-  }
-  
-  .hero-title {
-    font-size: 2rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-  
-  .hero-cta, .cta-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .value-grid, .services-grid, .work-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .container {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 20px !important;
-    margin: 0 auto !important;
-  }
-}
-</style>
+</body>
+</html>
