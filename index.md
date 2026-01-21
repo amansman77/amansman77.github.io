@@ -138,7 +138,7 @@ description: "기획·개발·실험·운영까지 비즈니스 전체 흐름을
 
           <div class="flex flex-wrap gap-3 pt-2">
             <a
-              href="https://dandani.yetimates.com/"
+              href="https://dandani.yetimates.com/?utm_source=portfolio&utm_medium=owned&utm_campaign=portfolio_main"
               target="_blank"
               class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-900 text-white text-[12px] font-medium tracking-[0.16em] uppercase hover:bg-brand-800 transition"
             >
