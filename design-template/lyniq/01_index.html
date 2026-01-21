@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>LYNIQ – Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Inter 폰트 (선택 사항) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* 선택 탭 표시용 */
+    .filter-active {
+      color: #000000;
+    }
+    .filter-inactive {
+      color: #777777;
+    }
+  </style>
+</head>
+<body class="bg-[#f5f5f5] text-black antialiased">
+
+  <!-- 전체 래퍼 -->
+  <div class="min-h-screen flex flex-col">
+
+    <!-- 상단 네비게이션 -->
+    <header class="sticky top-0 z-20 border-b border-gray-200 bg-white/80 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- 로고 -->
+        <div class="flex items-center gap-2">
+          <span class="text-xl font-semibold tracking-tight">LYNIQ</span>
+        </div>
+
+        <!-- 내비게이션 링크 -->
+        <nav class="hidden md:flex items-center gap-8 text-xs font-medium tracking-[0.18em] uppercase text-gray-600">
+          <a href="#" class="hover:text-black transition">About</a>
+          <a href="#" class="hover:text-black transition">Projects</a>
+          <a href="#" class="hover:text-black transition">Contact</a>
+        </nav>
+
+        <!-- 우측 메뉴 텍스트 + 햄버거 -->
+        <button class="flex items-center gap-2 text-xs font-medium tracking-[0.2em] uppercase text-gray-700 md:hidden">
+          <span>Menu</span>
+          <span class="flex flex-col gap-[3px]">
+            <span class="w-4 h-[1.5px] bg-black"></span>
+            <span class="w-4 h-[1.5px] bg-black"></span>
+          </span>
+        </button>
+
+        <!-- 데스크톱용 Menu -->
+        <div class="hidden md:flex items-center gap-2 text-xs font-medium tracking-[0.2em] uppercase text-gray-700">
+          <span>Menu</span>
+          <span class="flex flex-col gap-[3px]">
+            <span class="w-4 h-[1.5px] bg-black"></span>
+            <span class="w-4 h-[1.5px] bg-black"></span>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1">
+        <div class="max-w-6xl mx-auto px-6 pt-10 pb-16">
+          <!-- 페이지 타이틀 -->
+          <section class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+            <div>
+              <p class="text-xs font-medium tracking-[0.2em] uppercase text-gray-500 mb-3">
+                Product Experiments
+              </p>
+              <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-4">
+                Building business through experiments.
+              </h1>
+            </div>
+            <p class="max-w-lg text-sm md:text-base text-gray-600 leading-relaxed">
+              기획–디자인–개발–운영까지 한 사이클을 직접 돌려보고,<br class="hidden md:block">
+              가설·지표·실험을 반복하며 <span class="font-medium">“함께 비즈니스를 만들어 갈 수 있는 개발자”</span>로
+              스스로를 검증하고 있습니다.
+            </p>
+          </section>
+      
+          <!-- 간단한 카테고리 필터 (향후 확장용) -->
+          <section class="mb-8 border-b border-gray-200 pb-4">
+            <div class="flex flex-wrap gap-4 text-xs font-medium tracking-[0.15em] uppercase">
+              <button class="filter-tab filter-active" data-filter="all">
+                All
+              </button>
+              <button class="filter-tab filter-inactive" data-filter="dandani">
+                Dandani
+              </button>
+              <button class="filter-tab filter-inactive" data-filter="serverless">
+                Serverless · Data
+              </button>
+              <button class="filter-tab filter-inactive" data-filter="matching">
+                Matching Platform
+              </button>
+              <button class="filter-tab filter-inactive" data-filter="branding">
+                Landing · Branding
+              </button>
+            </div>
+          </section>
+      
+          <!-- 프로젝트 + 실험 카드 그리드 -->
+          <section class="grid gap-8 md:grid-cols-2 auto-rows-fr" id="projects-grid">
+            <!-- Dandani 대표 카드 (실험 타임라인 포함, 2칸 차지) -->
+            <article
+              class="project-card group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition md:col-span-2"
+              data-category="dandani serverless"
+            >
+              <div class="p-6 md:p-8">
+                <!-- 헤더 -->
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-6">
+                  <div>
+                    <p class="text-[11px] font-medium tracking-[0.2em] uppercase text-gray-500 mb-2">
+                      대표 실험 제품 · Emotional Resilience
+                    </p>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-2">
+                      Dandani – 감정 회복 기반 30일 챌린지 서비스
+                    </h2>
+                    <p class="text-sm text-gray-600 max-w-xl">
+                      “상황이 나를 흔들더라도, 내가 중심을 잃지 않도록”을 목표로 설계한 감정 회복 챌린지 서비스입니다.
+                      기획·마케팅·사업계획·디자인·개발·운영까지 전 주기를 스스로 수행하며,
+                      <span class="font-medium">실험을 통해 제품과 비즈니스 가설을 검증</span>하고 있습니다.
+                    </p>
+                  </div>
+                  <div class="flex flex-col gap-2 text-xs text-gray-500 min-w-[180px]">
+                    <div class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600 self-start">
+                      Product · SaaS · Wellness
+                    </div>
+                    <div class="text-[11px] leading-relaxed">
+                      <p class="font-medium text-gray-700 mb-1">
+                        역할
+                      </p>
+                      <p>Product Owner, 기획, UX/UI, 서버리스 아키텍처, 프론트/백엔드 개발, 실험 설계 & 분석</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- 실험 타임라인 -->
+                <div class="border border-gray-100 rounded-2xl p-4 md:p-5 bg-gray-50/80">
+                  <div class="flex items-center justify-between mb-4">
+                    <p class="text-xs font-medium tracking-[0.16em] uppercase text-gray-500">
+                      Experiment Timeline
+                    </p>
+                    <span class="text-[11px] text-gray-400">
+                      Hypothesis → Experiment → Result → Next Step
+                    </span>
+                  </div>
+      
+                  <div class="grid gap-4 md:grid-cols-3">
+                    <!-- v1 카드 -->
+                    <div class="bg-white rounded-xl border border-gray-100 p-4 flex flex-col gap-2">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[11px] font-medium tracking-[0.16em] uppercase text-gray-500">
+                          Experiment v1
+                        </span>
+                        <span class="px-2 py-[2px] rounded-full bg-rose-50 text-[10px] font-medium text-rose-500">
+                          Fail → Learn
+                        </span>
+                      </div>
+                      <p class="text-sm font-semibold text-gray-900">
+                        Daily Challenge만으로 루틴이 만들어질까?
+                      </p>
+                      <p class="text-xs text-gray-600 leading-relaxed">
+                        인스타 광고 + Daily 실천 루프로 Day1/Day7 리텐션을 검증했습니다.
+                        결과적으로 <span class="font-medium">모든 핵심 지표 미달</span>로,
+                        단단이 v1이 “루틴 서비스”가 아니라 <span class="italic">1일 체험형 서비스</span>였다는 것을 확인했습니다.
+                      </p>
+                      <p class="text-[11px] text-gray-500 mt-1">
+                        Decision: 루틴을 만들기 위해서는 <span class="font-medium">구조와 보상 장치</span>가 필요하다는 결론 → 7일 챌린지 구조(v2) 설계.
+                      </p>
+                    </div>
+      
+                    <!-- v2 카드 -->
+                    <div class="bg-white rounded-xl border border-gray-100 p-4 flex flex-col gap-2">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[11px] font-medium tracking-[0.16em] uppercase text-gray-500">
+                          Experiment v2
+                        </span>
+                        <span class="px-2 py-[2px] rounded-full bg-amber-50 text-[10px] font-medium text-amber-600">
+                          Fail → Sharpen
+                        </span>
+                      </div>
+                      <p class="text-sm font-semibold text-gray-900">
+                        공감되는 실천 선택이 행동과 잔존을 만들까?
+                      </p>
+                      <p class="text-xs text-gray-600 leading-relaxed">
+                        CTR 5.03%, CPC 315원으로 광고 퍼포먼스는 매우 우수했지만,
+                        챌린지 선택률·실천 완료율·Day2 Retention 모두 목표 미달.
+                        <span class="font-medium">“공감만으로는 행동이 쌓이지 않는다”</span>는 사실을 데이터로 확인했습니다.
+                      </p>
+                      <p class="text-[11px] text-gray-500 mt-1">
+                        Decision: 리텐션에는 <span class="font-medium">보상·감정 루프·리마인더 설계</span>가 필수라는 인사이트 도출 → v3에서 UX & 보상 구조 집중 실험.
+                      </p>
+                    </div>
+      
+                    <!-- v3 카드 (Planned) -->
+                    <div class="bg-white rounded-xl border border-gray-100 p-4 flex flex-col gap-2">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[11px] font-medium tracking-[0.16em] uppercase text-gray-500">
+                          Experiment v3
+                        </span>
+                        <span class="px-2 py-[2px] rounded-full bg-emerald-50 text-[10px] font-medium text-emerald-600">
+                          Planned
+                        </span>
+                      </div>
+                      <p class="text-sm font-semibold text-gray-900">
+                        감정적 보상과 정제된 UX는 실천과 재방문을 높일까?
+                      </p>
+                      <p class="text-xs text-gray-600 leading-relaxed">
+                        Self-dogfooding으로 확인한 UX·문구·보상 개선 효과를
+                        정량 실험으로 검증합니다. 목표는 Day1 실천 완료율 ≥ 30%, Day2 Retention ≥ 10%.
+                      </p>
+                      <p class="text-[11px] text-gray-500 mt-1">
+                        Role: 실험 설계, 지표 정의, 이벤트 로깅, 결과 분석까지
+                        <span class="font-medium">한 사이클을 직접 운영</span>합니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- 이 프로젝트가 말해주는 나 (요약) -->
+                <div class="mt-6 grid gap-3 md:grid-cols-3 text-[11px] text-gray-600">
+                  <div class="border border-gray-100 rounded-xl px-4 py-3 bg-white/60">
+                    <p class="font-semibold text-gray-800 mb-1">
+                      가설부터 말하는 개발자
+                    </p>
+                    <p>
+                      기능 구현 이전에 <span class="font-medium">“무슨 가설을 검증하는지”</span>를 먼저 정의하고,
+                      지표와 이벤트 구조를 함께 설계합니다.
+                    </p>
+                  </div>
+                  <div class="border border-gray-100 rounded-xl px-4 py-3 bg-white/60">
+                    <p class="font-semibold text-gray-800 mb-1">
+                      퍼널 전체를 보는 시야
+                    </p>
+                    <p>
+                      광고 CTR/CPC부터 서비스 내부 Retention까지
+                      <span class="font-medium">비즈니스 퍼널 전체</span>를 한 프레임으로 바라봅니다.
+                    </p>
+                  </div>
+                  <div class="border border-gray-100 rounded-xl px-4 py-3 bg-white/60">
+                    <p class="font-semibold text-gray-800 mb-1">
+                      실패를 실험 자산으로 전환
+                    </p>
+                    <p>
+                      v1, v2는 모두 Fail이었지만, 각각이 v3 방향을 명확하게 만든
+                      <span class="font-medium">의미 있는 실패</span>였습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+      
+            <!-- 아래부터는 다른 프로젝트 카드 예시들 – 필요에 따라 덮어쓰기/추가 -->
+            <!-- Shop Mate -->
+            <article
+              class="project-card group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+              data-category="serverless"
+            >
+              <div class="p-6">
+                <p class="text-[11px] font-medium tracking-[0.18em] uppercase text-gray-500 mb-2">
+                  Shop Mate · Serverless Receipt Manager
+                </p>
+                <h3 class="text-xl font-semibold mb-2">
+                  영수증 OCR · 파싱 · 데이터 파이프라인
+                </h3>
+                <p class="text-sm text-gray-500 mb-4">
+                  Tesseract.js + Cloudflare Workers + D1/R2 기반으로,
+                  <span class="font-medium">이미지 업로드 → OCR → 파싱 → 구조화 저장 → 검색</span>까지
+                  엔드 투 엔드 파이프라인을 서버리스로 구현했습니다.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                    Serverless
+                  </span>
+                  <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                    OCR · Data Parsing
+                  </span>
+                </div>
+              </div>
+            </article>
+      
+            <!-- JAYURO -->
+            <article
+              class="project-card group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+              data-category="matching serverless"
+            >
+              <div class="p-6">
+                <p class="text-[11px] font-medium tracking-[0.18em] uppercase text-gray-500 mb-2">
+                  JAYURO · Education Matching Platform
+                </p>
+                <h3 class="text-xl font-semibold mb-2">
+                  MAU 100k를 상정한 Edge-first 아키텍처
+                </h3>
+                <p class="text-sm text-gray-500 mb-4">
+                  Cloudflare Workers + RDS(MySQL) + Hyperdrive 기반 BFF 구조로,
+                  교육/강사 매칭 플랫폼의 <span class="font-medium">확장 가능한 서버리스 백엔드</span>를 설계했습니다.
+                  ADR로 기술 의사결정을 문서화하며 팀을 리드했습니다.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                    Matching
+                  </span>
+                  <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                    Edge · BFF
+                  </span>
+                </div>
+              </div>
+            </article>
+      
+            <!-- Mindful Motion -->
+            <article
+              class="project-card group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+              data-category="branding"
+            >
+              <div class="p-6">
+                <p class="text-[11px] font-medium tracking-[0.18em] uppercase text-gray-500 mb-2">
+                  Mindful Motion · Yoga Studio
+                </p>
+                <h3 class="text-xl font-semibold mb-2">
+                  브랜드 톤을 살린 예약형 랜딩 페이지
+                </h3>
+                <p class="text-sm text-gray-500 mb-4">
+                  컬러 팔레트·컴포넌트 시스템·카피까지 통합 설계하여,
+                  오프라인 요가 스튜디오의 <span class="font-medium">브랜딩과 예약 퍼널</span>을 동시에 잡는
+                  반응형 웹사이트를 제작했습니다.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                    Branding
+                  </span>
+                  <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                    Landing
+                  </span>
+                </div>
+              </div>
+            </article>
+              <!-- 여기까지가 프로젝트 카드 그리드 섹션 -->
+    </section>
+
+    <!-- How I build with you -->
+    <section class="mt-16 mb-12">
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-8">
+        <div>
+          <p class="text-[11px] font-medium tracking-[0.2em] uppercase text-gray-500 mb-2">
+            How I build with you
+          </p>
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-3">
+            비즈니스를 함께 만드는 전체 흐름을 봅니다.
+          </h2>
+          <p class="text-sm text-gray-600 max-w-xl leading-relaxed">
+            단단이를 포함한 모든 프로젝트는 <span class="font-medium">“가설 → 실험 → 학습 → 다음 단계”</span>라는
+            동일한 프레임 안에서 설계합니다.
+            기능 개발뿐 아니라, 유입–전환–잔존까지 비즈니스 퍼널 전체를 함께 봅니다.
+          </p>
+        </div>
+        <div class="text-xs text-gray-500 max-w-sm">
+          <p class="mb-2 font-medium text-gray-700">함께 일할 때, 저는 이렇게 생각합니다.</p>
+          <ul class="space-y-1 list-disc list-inside">
+            <li>“무엇을 만들까?”보다 <span class="font-medium">“무엇을 검증할까?”</span>를 먼저 정합니다.</li>
+            <li>제품 구조와 인프라는 <span class="font-medium">작게 시작해서 키울 수 있게</span> 설계합니다.</li>
+            <li>실패한 실험도 <span class="font-medium">다음 단계의 설계 자산</span>으로 남깁니다.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3-step 플로우 -->
+      <div class="grid gap-4 md:grid-cols-3">
+        <!-- Step 1 -->
+        <div class="bg-white border border-gray-200 rounded-2xl px-5 py-5">
+          <p class="text-[11px] font-medium tracking-[0.2em] uppercase text-gray-500 mb-2">
+            01 · Discover & Frame
+          </p>
+          <h3 class="text-sm font-semibold text-gray-900 mb-2">
+            문제 정의와 가설 세우기
+          </h3>
+          <p class="text-xs text-gray-600 leading-relaxed mb-3">
+            시장/사용자 맥락을 함께 정리하고, “이번 실험에서 무엇을 배우고 싶은지”를 문장으로 고정합니다.
+            단단이에서는 <span class="font-medium">“루틴이 실제로 만들어지는가?”</span>를 v1 가설로 설정했습니다.
+          </p>
+          <ul class="text-[11px] text-gray-500 space-y-1 list-disc list-inside">
+            <li>타겟 & 페르소나 정의</li>
+            <li>핵심 퍼널 가설 정의</li>
+            <li>실험 단위(Sprint) 합의</li>
+          </ul>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-white border border-gray-200 rounded-2xl px-5 py-5">
+          <p class="text-[11px] font-medium tracking-[0.2em] uppercase text-gray-500 mb-2">
+            02 · Design, Build, Run
+          </p>
+          <h3 class="text-sm font-semibold text-gray-900 mb-2">
+            UX 설계부터 서버리스 아키텍처까지
+          </h3>
+          <p class="text-xs text-gray-600 leading-relaxed mb-3">
+            가설을 검증하기 위한 최소한의 UX와 기능을 설계하고,
+            서버리스/Edge 중심으로 빠르게 구현합니다.
+            데이터 로깅과 지표 정의까지 한 번에 구성합니다.
+          </p>
+          <ul class="text-[11px] text-gray-500 space-y-1 list-disc list-inside">
+            <li>와이어프레임 & 카피 초안</li>
+            <li>Cloudflare 기반 서버리스 백엔드</li>
+            <li>이벤트/지표 로깅 설계</li>
+          </ul>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-white border border-gray-200 rounded-2xl px-5 py-5">
+          <p class="text-[11px] font-medium tracking-[0.2em] uppercase text-gray-500 mb-2">
+            03 · Measure & Iterate
+          </p>
+          <h3 class="text-sm font-semibold text-gray-900 mb-2">
+            결과 해석과 다음 실험 설계
+          </h3>
+          <p class="text-xs text-gray-600 leading-relaxed mb-3">
+            실험 결과를 숫자와 이야기로 정리합니다.
+            v1, v2가 모두 실패한 단단이의 경우,
+            각 실험이 v3 방향을 더 선명하게 만들어준 <span class="font-medium">학습 자산</span>이 되었습니다.
+          </p>
+          <ul class="text-[11px] text-gray-500 space-y-1 list-disc list-inside">
+            <li>KPI 달성/미달 분석</li>
+            <li>What worked / What didn’t</li>
+            <li>다음 스텝(Experiment v3, v4...) 정의</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+        <!-- Roles I can own end-to-end -->
+        <section class="mt-12 mb-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-4">
+              <div>
+                <p class="text-[11px] font-medium tracking-[0.2em] uppercase text-gray-500 mb-2">
+                  Roles I can own
+                </p>
+                <h2 class="text-xl md:text-2xl font-semibold tracking-tight mb-2">
+                  한 사람으로서 어디까지 책임질 수 있는지
+                </h2>
+              </div>
+              <p class="text-xs text-gray-600 max-w-md leading-relaxed">
+                초기 단계의 팀일수록 한 사람이 여러 모자를 써야 합니다.
+                단단이, Shop Mate, JAYURO를 만들면서
+                <span class="font-medium">실제로 제가 맡아왔던 역할</span>을 기준으로 정리했습니다.
+              </p>
+            </div>
+      
+            <div class="bg-white border border-gray-200 rounded-2xl px-5 py-5">
+              <div class="grid gap-4 md:grid-cols-3 text-[11px]">
+                <!-- Column 1 -->
+                <div class="space-y-2">
+                  <p class="font-semibold text-gray-800 mb-1">
+                    Product & Experiment
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 uppercase tracking-[0.16em] text-gray-700">
+                      Problem Framing
+                    </span>
+                    <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 uppercase tracking-[0.16em] text-gray-700">
+                      Hypothesis Design
+                    </span>
+                    <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 uppercase tracking-[0.16em] text-gray-700">
+                      Funnel & Metrics
+                    </span>
+                    <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 uppercase tracking-[0.16em] text-gray-700">
+                      Experiment Report
+                    </span>
+                  </div>
+                </div>
+      
+                <!-- Column 2 -->
+                <div class="space-y-2">
+                  <p class="font-semibold text-gray-800 mb-1">
+                    UX · UI · Copy
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 uppercase tracking-[0.16em] text-gray-700">
+                      UX Flow
+                    </span>
+                    <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 uppercase tracking-[0.16em] text-gray-700">
+                      Design System
+                    </span>
+                    <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 uppercase tracking-[0.16em] text-gray-700">
+                      Emotional Copy
+                    </span>
+                    <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 uppercase tracking-[0.16em] text-gray-700">
+                      Landing Page
+                    </span>
+                  </div>
+                </div>
+      
+                <!-- Column 3 -->
+                <div class="space-y-2">
+                  <p class="font-semibold text-gray-800 mb-1">
+                    Engineering & Ops
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 uppercase tracking-[0.16em] text-gray-700">
+                      Cloudflare Workers · D1
+                    </span>
+                    <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 uppercase tracking-[0.16em] text-gray-700">
+                      React · Tailwind
+                    </span>
+                    <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 uppercase tracking-[0.16em] text-gray-700">
+                      API Design
+                    </span>
+                    <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 uppercase tracking-[0.16em] text-gray-700">
+                      Observability
+                    </span>
+                  </div>
+                </div>
+              </div>
+      
+              <p class="mt-4 text-[11px] text-gray-500">
+                * 실제로 수행했던 일(단단이, Shop Mate, JAYURO)을 기반으로 정리했습니다. 
+                “어떤 역할까지 혼자 맡길 수 있는지”를 직관적으로 보여주기 위한 맵입니다.
+              </p>
+            </div>
+          </section>
+      
+        </div>
+      </main>
+      
+
+    <!-- 푸터 -->
+    <footer class="border-t border-gray-200 bg-white">
+      <div class="max-w-6xl mx-auto px-6 py-6 text-xs text-gray-500 flex flex-col md:flex-row justify-between gap-2">
+        <span>© 2025 LYNIQ Studio. All rights reserved.</span>
+        <span>Made with Tailwind CSS.</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 간단한 필터 스크립트 -->
+  <script>
+    const tabs = document.querySelectorAll('.filter-tab');
+    const cards = document.querySelectorAll('.project-card');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-filter');
+
+        tabs.forEach(t => {
+          t.classList.remove('filter-active');
+          t.classList.add('filter-inactive');
+        });
+        tab.classList.remove('filter-inactive');
+        tab.classList.add('filter-active');
+
+        cards.forEach(card => {
+          const cats = card.getAttribute('data-category') || '';
+          if (target === 'all' || cats.includes(target)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

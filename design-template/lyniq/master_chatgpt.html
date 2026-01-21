@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>LYNIQ – Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Inter 폰트 (선택 사항) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* 선택 탭 표시용 */
+    .filter-active {
+      color: #000000;
+    }
+    .filter-inactive {
+      color: #777777;
+    }
+  </style>
+</head>
+<body class="bg-[#f5f5f5] text-black antialiased">
+
+  <!-- 전체 래퍼 -->
+  <div class="min-h-screen flex flex-col">
+
+    <!-- 상단 네비게이션 -->
+    <header class="sticky top-0 z-20 border-b border-gray-200 bg-white/80 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- 로고 -->
+        <div class="flex items-center gap-2">
+          <span class="text-xl font-semibold tracking-tight">LYNIQ</span>
+        </div>
+
+        <!-- 내비게이션 링크 -->
+        <nav class="hidden md:flex items-center gap-8 text-xs font-medium tracking-[0.18em] uppercase text-gray-600">
+          <a href="#" class="hover:text-black transition">About</a>
+          <a href="#" class="hover:text-black transition">Projects</a>
+          <a href="#" class="hover:text-black transition">Contact</a>
+        </nav>
+
+        <!-- 우측 메뉴 텍스트 + 햄버거 -->
+        <button class="flex items-center gap-2 text-xs font-medium tracking-[0.2em] uppercase text-gray-700 md:hidden">
+          <span>Menu</span>
+          <span class="flex flex-col gap-[3px]">
+            <span class="w-4 h-[1.5px] bg-black"></span>
+            <span class="w-4 h-[1.5px] bg-black"></span>
+          </span>
+        </button>
+
+        <!-- 데스크톱용 Menu -->
+        <div class="hidden md:flex items-center gap-2 text-xs font-medium tracking-[0.2em] uppercase text-gray-700">
+          <span>Menu</span>
+          <span class="flex flex-col gap-[3px]">
+            <span class="w-4 h-[1.5px] bg-black"></span>
+            <span class="w-4 h-[1.5px] bg-black"></span>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="flex-1">
+      <div class="max-w-6xl mx-auto px-6 pt-10 pb-16">
+        <!-- 페이지 타이틀 -->
+        <section class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-4">
+              Projects
+            </h1>
+          </div>
+          <p class="max-w-lg text-sm md:text-base text-gray-600 leading-relaxed">
+            Every project we deliver is a reflection of our commitment to quality,
+            designed to inspire and drive success.
+          </p>
+        </section>
+
+        <!-- 카테고리 필터 -->
+        <section class="mb-8 border-b border-gray-200 pb-4">
+          <div class="flex flex-wrap gap-4 text-xs font-medium tracking-[0.15em] uppercase">
+            <button class="filter-tab filter-active" data-filter="all">
+              All
+            </button>
+            <button class="filter-tab filter-inactive" data-filter="web">
+              Web design
+            </button>
+            <button class="filter-tab filter-inactive" data-filter="branding">
+              Branding
+            </button>
+            <button class="filter-tab filter-inactive" data-filter="development">
+              Development
+            </button>
+            <button class="filter-tab filter-inactive" data-filter="support">
+              Support
+            </button>
+          </div>
+        </section>
+
+        <!-- 프로젝트 카드 그리드 -->
+        <section class="grid gap-8 md:grid-cols-2 auto-rows-fr" id="projects-grid">
+          <!-- Card 1 -->
+          <article
+            class="project-card group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+            data-category="branding web"
+          >
+            <div class="relative">
+              <img
+                src="https://images.pexels.com/photos/18104/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Radiant skincare branding"
+                class="w-full h-64 object-cover transition group-hover:brightness-95"
+              />
+              <span class="absolute top-3 right-3 w-2 h-2 rounded-full bg-red-500"></span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Radiant skincare branding
+              </h3>
+              <p class="text-sm text-gray-500 mb-4">
+                Radiant skincare is offering a user-centric, ad-free platform.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                  Branding
+                </span>
+                <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                  Web design
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article
+            class="project-card group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+            data-category="branding development"
+          >
+            <div class="relative">
+              <img
+                src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Apex clothing Co. rebrand"
+                class="w-full h-64 object-cover transition group-hover:brightness-95"
+              />
+              <span class="absolute top-3 right-3 w-2 h-2 rounded-full bg-red-500"></span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Apex clothing Co. rebrand
+              </h3>
+              <p class="text-sm text-gray-500 mb-4">
+                Bold new look for an eco-conscious apparel brand.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                  Branding
+                </span>
+                <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                  Development
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article
+            class="project-card group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+            data-category="development web"
+          >
+            <div class="relative">
+              <img
+                src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Vero app development"
+                class="w-full h-64 object-cover transition group-hover:brightness-95"
+              />
+              <span class="absolute top-3 right-3 w-2 h-2 rounded-full bg-red-500"></span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Vero app development
+              </h3>
+              <p class="text-sm text-gray-500 mb-4">
+                Vero aimed to distinguish itself in a competitive social media landscape.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                  Development
+                </span>
+                <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                  Web design
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article
+            class="project-card group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+            data-category="branding support"
+          >
+            <div class="relative">
+              <img
+                src="https://images.pexels.com/photos/325153/pexels-photo-325153.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Stoyo branding"
+                class="w-full h-64 object-cover transition group-hover:brightness-95"
+              />
+              <span class="absolute top-3 right-3 w-2 h-2 rounded-full bg-red-500"></span>
+              <span class="absolute bottom-3 left-3 text-[11px] font-medium tracking-[0.18em] uppercase bg-white/80 px-3 py-1 rounded-full">
+                Made in Figma
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Stoyo branding
+              </h3>
+              <p class="text-sm text-gray-500 mb-4">
+                Visual identity and packaging design for a Stoyo brand.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                  Branding
+                </span>
+                <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                  Support
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article
+            class="project-card group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+            data-category="web"
+          >
+            <div class="relative">
+              <img
+                src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Northwave web design"
+                class="w-full h-64 object-cover transition group-hover:brightness-95"
+              />
+              <span class="absolute top-3 right-3 w-2 h-2 rounded-full bg-red-500"></span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Northwave web design
+              </h3>
+              <p class="text-sm text-gray-500 mb-4">
+                Responsive website for a lifestyle-driven outdoor brand.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                  Web design
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article
+            class="project-card group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+            data-category="development support"
+          >
+            <div class="relative">
+              <img
+                src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Helio support suite"
+                class="w-full h-64 object-cover transition group-hover:brightness-95"
+              />
+              <span class="absolute top-3 right-3 w-2 h-2 rounded-full bg-red-500"></span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Helio support suite
+              </h3>
+              <p class="text-sm text-gray-500 mb-4">
+                End-to-end digital support tools for a SaaS platform.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                  Development
+                </span>
+                <span class="inline-flex items-center rounded-full border border-gray-200 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-600">
+                  Support
+                </span>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="border-t border-gray-200 bg-white">
+      <div class="max-w-6xl mx-auto px-6 py-6 text-xs text-gray-500 flex flex-col md:flex-row justify-between gap-2">
+        <span>© 2025 LYNIQ Studio. All rights reserved.</span>
+        <span>Made with Tailwind CSS.</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 간단한 필터 스크립트 -->
+  <script>
+    const tabs = document.querySelectorAll('.filter-tab');
+    const cards = document.querySelectorAll('.project-card');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-filter');
+
+        tabs.forEach(t => {
+          t.classList.remove('filter-active');
+          t.classList.add('filter-inactive');
+        });
+        tab.classList.remove('filter-inactive');
+        tab.classList.add('filter-active');
+
+        cards.forEach(card => {
+          const cats = card.getAttribute('data-category') || '';
+          if (target === 'all' || cats.includes(target)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
