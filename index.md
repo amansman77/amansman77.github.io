@@ -10,6 +10,16 @@ description: "기획·개발·실험·운영까지 비즈니스 전체 흐름을
   <title>황호성 · 비즈니스를 함께 만드는 개발자</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B1H02T38L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0B1H02T38L');
+  </script>
+
   <!-- Inter Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
